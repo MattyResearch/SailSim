@@ -32,6 +32,11 @@ nastran_path = location of nastran.exe
 AVLPath = location of the AVL executable, the .avl input files, and the .txt pressure data files.
 
 
+# Model Files
+Example files of an ILCA7 geometry and upwind shear layer modelling (in pyRunCase.avl) have been added.
+Move these files into their respective folders, as defined above, and run quasiSteadyRun.py for your first set of results.
+labRunCases.py includes some primitive optimisation algorithms. The data outputs can be used to generate graphs and performance data for the sail model, as seen in my written research paper.
+
 Before running quasiSteadyRun:
 1. Pre-work MUST be done to ensure no errors this includes:
 2. Run the initial state BDF in Nastran to get op2 output (required for structureToAero.py)
